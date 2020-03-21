@@ -1,0 +1,74 @@
+.facebook
+{
+    background-image: url("/Ex1/assets/pngwave.png");
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url("../assets/apple-keyboard-apple-mouse-background-brown-585752.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+.borderdes{
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 1500px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 30px;
+    color:#ffecb3;
+    font-family: 'Oswald', sans-serif;
+    background: rgba(0,0,0,0.5);
+}
+.textdesign{
+    text-shadow: 0.5px 0 0 #fff, -0.5px 0 0 #fff, 0 0.5px 0 #fff, 0 -0.5px 0 #fff, 0.5px 0.5px #fff, -0.5px -0.5px 0 #fff, 0.5px -1px 0 #fff, -0.5px 0.5px 0 #fff;
+}
+.textdesignblack{
+    text-shadow: 1px 0 0 #000000, -1px 0 0 #000000, 0 1px  0 #000000, 0 -1px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+}
+.first-letter{
+    font-size: 45px;
+    line-height: 70px;
+}
+.bordergall{
+    border: 7px ridge rgba(117,117,117,0.52); border-radius: 26px 25px 25px 26px
+}
+.full-width {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+  .justify-content-center {
+    display: flex;
+    align-self: center;
+    width: 100%;
+  }
+  .lead.emoji-picker-container {
+    width: 300px;
+    display: block;
+  }
+    input {
+      width: 100%;
+      height: 50px;
+}
+
+.likestyle{
+    margin-top: -15px;
+    opacity: 0.8;
+}
+.likestyle:hover{
+    transform:  rotate(45deg);
+}
+.qrcode{
+    width:300%;
+}

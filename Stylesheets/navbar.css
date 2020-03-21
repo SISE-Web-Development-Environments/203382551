@@ -1,0 +1,41 @@
+nav{
+    position:absolute;
+    height: 80px;
+    transform: translate(-50%,-50%);
+    top: 5.7%;
+    left: 50%;
+    border-radius: 0.625rem;
+    width: 95%;
+    background: rgba(0,0,0,.4);
+    
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin:1.25rem 2.5rem;
+    transition: all ease-in-out .5s;
+   
+}
+
+li a{
+    text-decoration:none;
+    position: relative;
+    color:rgb(255, 255, 255,0.7);
+    font-size: 1.5rem;
+}
+li a:hover 
+{
+     color:rgb(132, 166, 194); 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+ul:hover li{
+    opacity: .2;
+    filter: blur(0.0625rem);
+}
+
+ul li:hover{
+    opacity: 1;
+    filter: blur(0rem);
+}
