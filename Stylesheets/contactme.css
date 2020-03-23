@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-
-
 .wrapper{
     position: absolute;
 	left: 29%;
     transform: translate(-50%, -50%);
-    top: 3290px;
 }
 
 .contact-form{
@@ -64,7 +59,7 @@
 	margin: 0 150px;
 	background: #ffc107; 
 	color: #ffecb3;
-	font-size: 1.25em;	
+	font-size: 0.75em;	
 	padding: 10px 0;
 	text-align: center;
 	text-transform: uppercase;

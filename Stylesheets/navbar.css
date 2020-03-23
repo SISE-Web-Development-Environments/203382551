@@ -5,17 +5,36 @@ nav{
     top: 5.7%;
     left: 50%;
     border-radius: 0.625rem;
-    width: 95%;
     background: rgba(0,0,0,.4);
+    width: 95%
     
 }
+
+.content {
+    padding: 16px;
+  }
+  
+.sticky {
+    position: fixed;
+    top:28px;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
 
 li{
     list-style: none;
     display: inline-block;
     margin:1.25rem 2.5rem;
     transition: all ease-in-out .5s;
-   
+    min-width: 5em;
+}
+.ul{
+    display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 li a{

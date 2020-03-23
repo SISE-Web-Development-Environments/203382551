@@ -18,7 +18,11 @@ body{
     -o-background-size: cover;
     background-size: cover;
     }
-
+    br
+    {
+       display: block;
+       margin: 1000000px 0;
+    }
 .borderdes{
     padding: 20px;
     border-radius: 15px;

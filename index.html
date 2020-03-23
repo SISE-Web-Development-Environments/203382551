@@ -13,15 +13,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="Stylesheets/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="Stylesheets/contactme.css">
      </head>
     <body class="body">
-               <nav class="nav">
-                <ul>
+                <div class="header" id="myHeader">
+               <nav class="nav" >
+                <ul class="ul">
                 <li><a  href="#myinfo">About Me</a></li>
                 <li><a  href="#myphotos">My Photos</a></li>
                 <li><a  href="#myplaylist">My Playlist</a></li>
@@ -31,7 +31,7 @@
                 <li><a  href="#like"><img  class="likestyle" src="assets/Webp.net-resizeimage (3).png"></a></li>
                 </ul>
                 </nav>
-
+            </div>
 
                 <div id="myinfo" style="margin-top: 150px;" class="borderdes">
                     <h4  class=textdesign style="color:#472c15; font-size:80px;">Who am i?</h4>
@@ -59,6 +59,8 @@
                     <h4  class=textdesign style="color:#472c15; font-size:80px;">My Playlist:</h4>
                     <iframe style="margin-left: 20%; border: 7px ridge rgba(117,117,117,0.52); border-radius: 26px 25px 25px 26px;" class="gallery" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLDTnGE8mMFxG3oOahUoCpfm8a9E2LwYuQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
+
+
                 <div id="qa" style="margin-top: 150px;" class="borderdes">
                     <h4  class=textdesign style="color:#472c15; font-size:80px;">Q&A:</h4>
                     <p class="textdesign" style="color:black; font-weight: bold;"><span class=first-letter>W</span>hat is the defference between Web1 , Web2 and Web3?</p>
@@ -68,28 +70,54 @@
                         sharing. Examples of Web 2.0 applications are Youtube, Wiki, Flickr, Facebook,
                         and so on.</br>
                     <br>Web 3.0 is a semantic web which refers to the future. In Web 3.0, computers can interpret information like humans and intelligently generate and distribute useful content tailored to the needs of users. One example of Web 3.0 is Tivo, a digital video recorder. Its recording program can search the web and read what it finds to you based on your preferences.</br></p>
+                    <p class="textdesign" style="color:black; font-weight: bold;"><span class=first-letter>M</span>edicines side effects Use Case:</p>
+                    <p class="textdesignblack"> <span class=first-letter>A</span>nswer:<br>
+                    Web 1.0<br>
+                    1.Query: Corona<br>
+                    2. Return the all static pages that include exactly result for Corona (Beer)<br>
+                    3. Fast search : Apple<br>
+                    4. The result page will not be compatiable to the user<br>
+                    5. The pages will include the spesific word without give any meaning <br>
+                    6. A lot of pages will retrive<br>
+                   <br>Web 1.0</br>
+                    1.Query: Corona<br>
+                    2. Return the all static pages that include exactly result for Corona (Beer)<br>
+                    3. Fast search : Apple<br>
+                    4. The result page will not be compatiable to the user<br>
+                    5. The pages will include the spesific word without give any meaning <br>
+                    6. A lot of pages will retrive<br>
+                </p>
+
                 </div>
-                <div>
-                <div id="contactme" class="wrapper">
+
+                <div id="contactme" class="wrapper" style="margin-top: 470px;">
                 <div class="contact-form">
                     <div class="title">Contact Me!</div>
                     <div class="input-fields">
+                        <form action="mailto:davidzal1992@gmail.com" id="test" method="post" enctype="text/plain"></form>
                             <div class="items">
                                 <label for="name" class="label">name</label>
-                                <input id="name" type="text" class="input">
+                                <input id="name"  name="name" type="text" class="input">
                             </div>
                             <div class="items">
                                 <label for="email" class="label">email</label>
-                                <input id="email" type="text" class="input">
+                                <input id="email" name="from" type="email" class="input">
                             </div>
                             <div class="items">
                                 <label for="subject" class="label">subject</label>
-                                <input id="subject" type="text" class="input">
+                                <input id="subject"   type="text" class="input">
+                                <script>
+                                $(function (){
+                                    $("#test").submit(function (){
+                                       $(this).attr('action','mailto:davidzal1992@gmail.com?subject=' + $("#subject").val());
+                                    });
+                                   });
+                                </script>
                             </div>
                             <div class="items">
                                 <label for="msg" class="label">message</label>
                                 <p class="lead emoji-picker-container"> 
-                                <textarea id="msg" class="text-area" data-emojiable="true"></textarea>
+                                <textarea id="msg" name="content:" class="text-area" data-emojiable="true"></textarea>
                                 </p>
                                 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
                                 <script src="jQuery/config.js"></script>
@@ -107,17 +135,37 @@
                                 });
                                 </script>
                             </div>
+                            <input type="submit" class="btn" value="send"></div>
+                        </form>
                         </div>
-                        <div class="btn">send</div>
-                    </div>
-                    
+                       
+                    </div> 
                 </div>
-                </div>
-        
-                <div id="like" style="width: 15%; margin-top:60px; margin-left: 1000px;" class="borderdes">
+
+
+                <div id="like" style="width: 15%; margin-top:10%; margin-left: 1000px;" class="borderdes">
                 <img style="margin-left: -10px; width: 110%;"id="qrcode" src="assets/qr.png">
-                <div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-davidZal1992/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div></div>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
+                <div class="fb-like" data-href="https://sise-web-development-environments.github.io/203382551/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div></div>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
+                </div>
+                
+                <script>window.onscroll = function() {myFunction()};
+
+                    // Get the header
+                    var header = document.getElementById("myHeader");
+                    
+                    // Get the offset position of the navbar
+                    var sticky = header.offsetTop;
+                    
+                    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                    function myFunction() {
+                      if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                      } else {
+                        header.classList.remove("sticky");
+                      }
+                    }</script>
+                
   </body>
 </html>
