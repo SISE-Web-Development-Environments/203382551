@@ -94,18 +94,18 @@
                 <div class="contact-form">
                     <div class="title">Contact Me!</div>
                     <div class="input-fields">
-                        <form action="mailto:davidzal1992@gmail.com" id="test" method="post" enctype="text/plain"></form>
+                        <form action="mailto:davidzal1992@gmail.com" id="test" method="post" enctype="text/plain">
                             <div class="items">
                                 <label for="name" class="label">name</label>
-                                <input id="name"  name="name" type="text" class="input">
+                                <input id="name"  placeholder="Full name" name="name" required type="text" class="input">
                             </div>
                             <div class="items">
                                 <label for="email" class="label">email</label>
-                                <input id="email" name="from" type="email" class="input">
+                                <input id="email" name="from" type="email" placeholder="exapmle@example.com" required class="input">
                             </div>
                             <div class="items">
                                 <label for="subject" class="label">subject</label>
-                                <input id="subject"   type="text" class="input">
+                                <input id="subject"  placeholder="Subject" required type="text" class="input">
                                 <script>
                                 $(function (){
                                     $("#test").submit(function (){
@@ -117,7 +117,7 @@
                             <div class="items">
                                 <label for="msg" class="label">message</label>
                                 <p class="lead emoji-picker-container"> 
-                                <textarea id="msg" name="content:" class="text-area" data-emojiable="true"></textarea>
+                                <textarea id="msg" name="content" class="text-area" data-emojiable="true"></textarea>
                                 </p>
                                 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
                                 <script src="jQuery/config.js"></script>
