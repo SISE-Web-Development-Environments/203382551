@@ -69,6 +69,7 @@ body{
 .likestyle{
     margin-top: -15px;
     opacity: 0.8;
+    margin-right: 10px;
 }
 .likestyle:hover{
     transform:  rotate(45deg);
